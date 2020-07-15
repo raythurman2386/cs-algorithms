@@ -6,9 +6,12 @@ Returns: an integer
 
 def eating_cookies(n):
     # Your code here
+    # if n is less that one
+    # return a 1
     if n <= 1:
         return 1
 
+    # Cookie monster can only eat up to 3 cookies at a time
     pass
 
 
