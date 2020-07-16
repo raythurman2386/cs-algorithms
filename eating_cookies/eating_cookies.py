@@ -22,14 +22,14 @@ def eating_cookies(n, cache=None):
     # else:
     #     return eating_cookies(n - 3) + eating_cookies(n - 2) + eating_cookies(n - 1)
 
-    x1 = base[0]
-    x2 = base[1]
-    x3 = base[2]
+    f1 = base[0]
+    f2 = base[1]
+    f3 = base[2]
 
     for _ in range(3, n):
-        x3, x2, x1 = x1 + x2 + x3, x3, x2
+        f3, f2, f1 = f1 + f2 + f3, f3, f2
 
-    return x1 + x2 + x3
+    return f1 + f2 + f3
 
 
 if __name__ == "__main__":
