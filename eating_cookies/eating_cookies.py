@@ -9,6 +9,7 @@ def eating_cookies(n, cache=None):
     # if there are less than 3 cookies
     # return the base case of combos
     # tests show 1, 1, 2 for less than three cookies
+    # Cookie monster can only eat up to 3 cookies at a time
     base = [1, 1, 2]
 
     if n < 3:
@@ -16,6 +17,10 @@ def eating_cookies(n, cache=None):
 
     # After the base case
     # f(n) = f(n-3) + f(n-2) + f(n-1)
+    # USING RECURSION
+    # Right answers, not efficient
+    # else:
+    #     return eating_cookies(n - 3) + eating_cookies(n - 2) + eating_cookies(n - 1)
 
     x1 = base[0]
     x2 = base[1]
